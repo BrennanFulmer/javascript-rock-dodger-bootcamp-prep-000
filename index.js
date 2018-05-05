@@ -111,7 +111,7 @@ function moveDodgerRight() {
     window.requestAnimationFrame(move);
 
     if (west < 360) {
-      DODGER.style.left = `${west + 4}px`;
+      DODGER.style.left = `${west + 20}px`;
     }
   }
   window.requestAnimationFrame(move);
