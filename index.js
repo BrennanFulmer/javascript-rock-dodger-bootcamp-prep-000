@@ -95,10 +95,15 @@ function moveDodgerLeft() {
   const left = parseInt(dodger.style.left.replace(`px`, ``));
 
   function step() {
+<<<<<<< HEAD
     window.requestAnimationFrame(step);
 
+=======
+    DODGER.style.left = `${left - 4}px`;
+    
+>>>>>>> 1623fae1f085a035e8f93932ba1b4e70965a3a65
     if (left > 0) {
-      DODGER.style.left = `${left - 4}px`;
+      window.requestAnimationFrame(step);
     }
   }
   window.requestAnimationFrame(step);
@@ -108,10 +113,15 @@ function moveDodgerRight() {
   const west = parseInt(dodger.style.left.replace(`px`, ``));
 
   function move() {
+<<<<<<< HEAD
     window.requestAnimationFrame(move);
 
+=======
+    DODGER.style.left = `${west + 4}px`;
+    
+>>>>>>> 1623fae1f085a035e8f93932ba1b4e70965a3a65
     if (west < 360) {
-      DODGER.style.left = `${west + 4}px`;
+      window.requestAnimationFrame(move);
     }
   }
   window.requestAnimationFrame(move);
