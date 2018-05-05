@@ -92,7 +92,7 @@ function moveDodger(e) {
 }
 
 function moveDodgerLeft() {
-  const left = parseInt(dodger.style.left.replace(`px`, ``));
+  let left = parseInt(dodger.style.left.replace(`px`, ``));
 
   function step() {
     if (left > 0) {
