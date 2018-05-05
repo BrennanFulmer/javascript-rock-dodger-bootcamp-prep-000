@@ -95,9 +95,8 @@ function moveDodgerLeft() {
   const left = parseInt(dodger.style.left.replace(`px`, ``));
 
   function step() {
-    DODGER.style.left = `${left - 160}px`;
-    
     if (left > 0) {
+      DODGER.style.left = `${left - 160}px`;
       window.requestAnimationFrame(step);
     }
   }
