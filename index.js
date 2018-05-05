@@ -98,7 +98,7 @@ function moveDodgerLeft() {
     window.requestAnimationFrame(step);
 
     if (left > 0) {
-      DODGER.style.left = `${left - 4}px`;
+      DODGER.style.left = `${left - 20}px`;
     }
   }
   window.requestAnimationFrame(step);
