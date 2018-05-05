@@ -108,8 +108,9 @@ function moveDodgerRight() {
   const west = parseInt(dodger.style.left.replace(`px`, ``));
 
   function move() {
+    DODGER.style.left = `${west + 20}px`;
+    
     if (west < 360) {
-      DODGER.style.left = `${west + 20}px`;
       window.requestAnimationFrame(move);
     }
   }
