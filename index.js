@@ -95,9 +95,10 @@ function moveDodgerLeft() {
   const left = parseInt(dodger.style.left.replace(`px`, ``));
 
   function step() {
-    window.requestAnimationFrame(step);
+    
 
     if (left > 0) {
+      window.requestAnimationFrame(step);
       DODGER.style.left = `${left - 20}px`;
     }
   }
