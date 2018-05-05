@@ -104,7 +104,7 @@ function moveDodgerLeft() {
 }
 
 function moveDodgerRight() {
-  const west = parseInt(dodger.style.left.replace(`px`, ``));
+  let west = parseInt(dodger.style.left.replace(`px`, ``));
 
   function move() {
     if (west < 360) {
